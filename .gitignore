@@ -1,0 +1,24 @@
+# Fichiers WordPress à ignorer
+wp-admin/
+wp-includes/
+
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/plugins/hello.php
+wp-content/themes/twenty*/
+
+# Fichiers de développement local à ignorer
+.DS_Store
+.vscode/
+.idea/
+.env
+
+# Fichiers de configuration MAMP à ignorer
+.htaccess
+mamp.ini
