@@ -1,0 +1,32 @@
+/***      HEADER    ***/
+
+/* Suppression du marging qui est mis par défaut sur le header du thème */
+
+.ct-container-fluid {
+     margin: 0 !important;
+     width: 100% !important;
+}
+
+/* Configuration du bouton Commander dans le menu de navigation */
+
+.ct-header-text .entry-content {
+     background-color: #DC9F96;
+     width: 14.75rem;
+     padding: 1.88rem 3.81rem 1.94rem 3.81rem;
+}
+
+.ct-header-text :hover { /* Ajout de l'effet de survol */
+     background-color: #C02E44;
+}
+
+.ct-header-text a {
+     text-decoration: none !important;
+}
+
+/* Configuration du Hover de "Nous rencontrer" */
+
+.menu :hover {
+     font-size: 13px !important;
+     font-weight: 700 !important;
+}
+
