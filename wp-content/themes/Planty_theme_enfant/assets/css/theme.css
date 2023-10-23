@@ -18,9 +18,20 @@
 
 /* Mise en forme du formulaire de contact */
 
-.wpcf7 {
+.wpcf7 {                /* centrage du formulaire sur la page */
     margin: 0 auto;
     max-width: 383px;
+}
+
+.wpcf7-form {           /* centrage des champs */
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wpcf7-spinner {        /* suppression des effets du spinner qui empêchent le centrage du bouton d'envoi */
+    width: 0 !important;
+    margin: 0 !important;
 }
 
 .wpcf7-form p {
@@ -30,16 +41,21 @@
 .wpcf7-text,
 .wpcf7-textarea {
     background-color: #ffffff !important;
+    border: none !important;
+    border-radius: 7px !important;
+    width: 383px !important;
 }
 
-.wpcf7-form label {
-    text-align: left;
+.wpcf7-textarea {
+    height: 237px;
 }
 
 .wpcf7-submit {
-    background-color: #E0B9B4 !important;
+    background-color: #E0B9B4 !important;   /* personnalisation du bouton d'envoi */
     width: 198px !important;
+    min-height: 37px !important;
     margin-top: 2px !important;
+    margin-bottom: 42px;
     padding: 9px 0 !important;
     border-radius: 5px !important;
     font-size: 15px !important;
