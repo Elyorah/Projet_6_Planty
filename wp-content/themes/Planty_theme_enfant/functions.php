@@ -10,7 +10,8 @@ function theme_enqueue_styles() {
 
 //  Chargement du style personnalisé
 
-     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/assets/css/theme.css');
+     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/assets/css/theme.css',
+     array(), filemtime(get_stylesheet_directory() . '/assets/css/theme.css'));;
 
 }
 

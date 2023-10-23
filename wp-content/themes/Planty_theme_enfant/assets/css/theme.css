@@ -14,6 +14,37 @@
      font-weight: 700 !important;
 }
 
-/***    ACCUEIL     ***/
+/***    NOUS RENCONTRER     ***/
 
-/* Mise en forme de la première séparation */
+/* Mise en forme du formulaire de contact */
+
+.wpcf7 {
+    margin: 0 auto;
+    max-width: 383px;
+}
+
+.wpcf7-form p {
+    margin-bottom: 22px;
+}
+
+.wpcf7-text,
+.wpcf7-textarea {
+    background-color: #ffffff !important;
+}
+
+.wpcf7-form label {
+    text-align: left;
+}
+
+.wpcf7-submit {
+    background-color: #E0B9B4 !important;
+    width: 198px !important;
+    margin-top: 2px !important;
+    padding: 9px 0 !important;
+    border-radius: 5px !important;
+    font-size: 15px !important;
+}
+
+.wpcf7-submit:hover {
+    background-color: #C02E44 !important;
+}
