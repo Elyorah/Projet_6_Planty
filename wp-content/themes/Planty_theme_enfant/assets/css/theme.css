@@ -1,17 +1,21 @@
 /***      HEADER    ***/
 
-/* Suppression du marging qui est mis par défaut sur le header du thème */
-
-.ct-container-fluid {
+.ct-container-fluid {               /* Suppression du marging qui est mis par défaut sur le header du thème */
     margin: 0 !important;
     width: 100% !important;
+    max-width: 1440px;
 }
 
-/* Configuration du Hover de "Nous rencontrer" */
-
-.menu :hover {
+.menu :hover {                      /* Configuration du Hover de "Nous rencontrer" */
      font-size: 13px !important;
      font-weight: 700 !important;
+}
+
+/***    BODY    ***/
+
+body {                              /* limitation de la taille de la page à 1440 px */
+    max-width: 1440px !important;
+    margin: auto !important;
 }
 
 /***    NOUS RENCONTRER     ***/
@@ -50,8 +54,8 @@
     height: 237px;
 }
 
-.wpcf7-submit {
-    background-color: #E0B9B4 !important;   /* personnalisation du bouton d'envoi */
+.wpcf7-submit {                             /* personnalisation du bouton d'envoi */
+    background-color: #E0B9B4 !important;
     width: 198px !important;
     min-height: 37px !important;
     margin-top: 2px !important;
@@ -64,3 +68,4 @@
 .wpcf7-submit:hover {
     background-color: #C02E44 !important;
 }
+
