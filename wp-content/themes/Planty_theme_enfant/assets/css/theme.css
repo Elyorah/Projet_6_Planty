@@ -20,6 +20,29 @@ body {                              /* limitation de la taille de la page à 144
 
 
 
+/***    ACCUEIL     ***/
+
+.separateur,
+.separateur-2 {
+  width: 100%;
+  height: 31px;
+  background-color: #ECE2DA;
+  border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+}
+
+.separateur {
+  border-bottom: 10px solid #E3D9D0;
+}
+
+.separateur-3 {
+  width: 100%;
+  height: 70px;
+  background-color: #ECE2DA;
+  border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+}
+
+
+
 /***    NOUS RENCONTRER     ***/
 
 /* Mise en forme du formulaire de contact */
@@ -96,7 +119,8 @@ body {                              /* limitation de la taille de la page à 144
 }
 
 
-/*** COMMANDER  ***/
+
+/***    COMMANDER   ***/
 
 /* Mise en forme du bouton de quantité */
 
