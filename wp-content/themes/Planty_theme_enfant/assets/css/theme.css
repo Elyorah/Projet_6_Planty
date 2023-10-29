@@ -1,73 +1,100 @@
 /***      HEADER    ***/
 
 .ct-container-fluid {               /* Suppression du marging qui est mis par défaut sur le header du thème */
-    margin: 0 !important;
-    width: 100% !important;
-    max-width: 1440px;
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: 1440px;
 }
 
 .menu :hover {                      /* Configuration du Hover de "Nous rencontrer" */
-     font-size: 13px !important;
-     font-weight: 700 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
 }
 
 /***    BODY    ***/
 
 body {                              /* limitation de la taille de la page à 1440 px */
-    max-width: 1440px !important;
-    margin: auto !important;
+  max-width: 1440px !important;
+  margin: auto !important;
 }
+
+
 
 /***    NOUS RENCONTRER     ***/
 
 /* Mise en forme du formulaire de contact */
 
-.wpcf7 {                /* centrage du formulaire sur la page */
-    margin: 0 auto;
-    max-width: 383px;
+.contact-form {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 383px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.wpcf7-form {           /* centrage des champs */
-    display: flex ;
-    flex-wrap: wrap;
-    justify-content: center;
+.form-titre {
+  width: 383px !important;
+  height: 24px;
+  margin-bottom: 13px !important;
 }
 
-.wpcf7-spinner {        /* suppression des effets du spinner qui empêchent le centrage du bouton d'envoi */
-    width: 0 !important;
-    margin: 0 !important;
+.form-champ {
+  width: 100%;
+  margin-bottom: 22px;
+
 }
 
-.wpcf7-form p {
-    margin-bottom: 22px;
+.form-champ p input,
+.form-champ-2 p input {
+  height: 71px;
 }
 
-.wpcf7-text,
-.wpcf7-textarea {
-    background-color: #ffffff !important;
-    border: none !important;
-    border-radius: 7px !important;
-    width: 383px !important;
+.form-message{
+  width: 100%;
+  margin-bottom: 24px;
 }
 
-.wpcf7-textarea {
-    height: 237px;
+.form-message p textarea {
+  height: 237px;
+  padding: 5px 12px;
 }
 
-.wpcf7-submit {                             /* personnalisation du bouton d'envoi */
-    background-color: #E0B9B4 !important;
-    width: 198px !important;
-    min-height: 37px !important;
-    margin-top: 2px !important;
-    margin-bottom: 42px;
-    padding: 9px 0 !important;
-    border-radius: 5px !important;
-    font-size: 15px !important;
+.form-champ p input,
+.form-champ-2 p input,
+.form-champ p input:focus,
+.form-champ-2 p input:focus,
+.form-message p textarea {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 7px;
 }
 
-.wpcf7-submit:hover {
-    background-color: #C02E44 !important;
+.form-bouton,
+.form-bouton-2 {
+  width: 198px;
+  margin: auto;
 }
+
+.form-bouton p input,
+.form-bouton-2 p input {
+  background-color: #E0B9B4;
+  width: 100%;
+  min-height: 55px !important;
+  padding: 9px 0;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-bouton p input {
+  margin-bottom: 42px;
+}
+
+.wpcf7-spinner {        /* suppression de l'affichage du spinner */
+  display: none;
+}
+
 
 /*** COMMANDER  ***/
 
@@ -111,3 +138,41 @@ body {                              /* limitation de la taille de la page à 144
     border-bottom: solid 1px white
   }
   
+/* Mise en forme du formulaire */
+
+.commande-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 293px 0 292px;
+  padding: 0;
+}
+
+.commande-form h2,
+.commande-form p {
+  color: #ffffff;
+}
+
+.commande-form h2 {
+  margin-bottom: 29px !important;
+}
+
+.info-form {
+  max-width: 428px;
+  padding-right: 45px;
+}
+
+.livraison-form {
+  max-width: 428px;
+  padding-left: 44px;
+  border-left: 1px solid #ffffff;
+}
+
+.form-champ-2 {
+  width: 100%;
+  margin: 0;
+}
+
+.form-bouton-2 p input {
+  margin: 44px 0 93px;
+}
