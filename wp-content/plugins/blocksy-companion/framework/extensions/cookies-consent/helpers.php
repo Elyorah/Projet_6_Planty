@@ -62,7 +62,7 @@ function blocksy_ext_cookies_checkbox($prefix = '') {
 		'forms_cookie_consent_content',
 		sprintf(
 			__('I accept the %sPrivacy Policy%s', 'blocksy-companion'),
-			'<a href="/privacy-policy">',
+			'<a href="' . get_privacy_policy_url() . '">',
 			'</a>'
 		)
 	);

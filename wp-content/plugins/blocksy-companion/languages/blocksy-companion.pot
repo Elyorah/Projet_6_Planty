@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-10-12 16:31+0000\n"
+"POT-Creation-Date: 2023-11-02 21:12+0000\n"
 "Project-Id-Version: undefined\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
@@ -3911,7 +3911,7 @@ msgstr ""
 msgid "John Doe"
 msgstr ""
 
-#: framework/extensions/widgets/widgets/ct-about-me/view.php:100
+#: framework/extensions/widgets/widgets/ct-about-me/view.php:97
 msgid "View Profile"
 msgstr ""
 
@@ -4379,8 +4379,8 @@ msgid "Label Text"
 msgstr ""
 
 #: framework/features/header/items/account/options.php:351,
-#: framework/features/header/items/account/views/login.php:88,
-#: framework/features/header/items/account/views/login.php:95
+#: framework/features/header/items/account/views/login.php:87,
+#: framework/features/header/items/account/views/login.php:94
 msgid "My Account"
 msgstr ""
 
@@ -4544,12 +4544,12 @@ msgstr ""
 msgid "Wish List"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/includes/wish-list-helpers.php:38
+#: framework/premium/extensions/woocommerce-extra/includes/wish-list-helpers.php:46
 msgid "Wishlist icon"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/includes/wish-list-helpers.php:46,
-#: framework/premium/extensions/woocommerce-extra/includes/wish-list-helpers.php:54
+#: framework/premium/extensions/woocommerce-extra/includes/wish-list-helpers.php:54,
+#: framework/premium/extensions/woocommerce-extra/includes/wish-list-helpers.php:62
 msgid "Add to wishlist"
 msgstr ""
 

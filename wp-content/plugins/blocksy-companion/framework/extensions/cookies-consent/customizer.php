@@ -117,7 +117,7 @@ $options = [
 							'type' => 'wp-editor',
 							'value' => sprintf(
 								__('I accept the %sPrivacy Policy%s*', 'blocksy-companion'),
-								'<a href="/privacy-policy">',
+								'<a href="' . get_privacy_policy_url() . '">',
 								'</a>'
 							),
 							'desc' => __( 'This text will appear under each comment form and subscribe form.', 'blocksy-companion' ),

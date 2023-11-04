@@ -2,10 +2,10 @@
 Tags: widget, widgets
 Requires at least: 5.2
 Requires PHP: 7.0
-Tested up to: 6.3
+Tested up to: 6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 1.9.8
+Stable tag: 1.9.10
 
 == Description ==
 
@@ -23,6 +23,12 @@ It runs and adds its enhancements only if the Blocksy theme is installed and act
 2. Activate the plugin by going to **Plugins** page in WordPress admin and clicking on **Activate** link.
 
 == Changelog ==
+1.9.10: 2023-11-02
+- Fix: Account `blocksy_get_avatar_url()` issue
+
+1.9.9: 2023-11-02
+- Improvement: Comments privacy policy link is not inheriting "Privacy page" option from dashboard
+
 1.9.8: 2023-10-12
 - Improvement: General fixes and improvements
 

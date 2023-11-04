@@ -10,44 +10,6 @@ class CacheResetManager {
 				$this->run_cache_purge();
 			}
 		);
-
-		add_action(
-			'upgrader_process_complete',
-			[$this, 'handle_update'],
-			10, 2
-		);
-	}
-
-	public function handle_update($upgrader, $options) {
-		if ($options['action'] !== 'update') {
-			return;
-		}
-
-		if (
-			$options['type'] === 'theme'
-			&&
-			isset($options['themes'])
-			&&
-			$options['themes']
-		) {
-			if (in_array('blocksy', $options['themes'])) {
-				$this->run_cache_purge();
-				do_action('blocksy:dynamic-css:refresh-caches');
-			}
-		}
-
-		if ($options['type'] === 'plugin') {
-			$plugins = [];
-
-			if (isset($options['plugins']) && is_array($options['plugins'])) {
-				$plugins = $options['plugins'];
-			}
-
-			if (in_array(BLOCKSY_PLUGIN_BASE, $plugins)) {
-				$this->run_cache_purge();
-				do_action('blocksy:dynamic-css:refresh-caches');
-			}
-		}
 	}
 
 	public function run_cache_purge() {
