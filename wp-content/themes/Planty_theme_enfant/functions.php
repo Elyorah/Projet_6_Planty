@@ -15,4 +15,18 @@ function theme_enqueue_styles() {
 
 }
 
+
+
+ //  ***       HOOK      ***    //
+
+ function nav_admin ( $items ) {
+
+     if (is_user_logged_in() && current_user_can('administrator')) {
+         $items .= '<a class="hook-style" href="'. admin_url() .'">Admin</a>';
+     }
+     return $items;
+ }
+ 
+ add_filter( 'wp_nav_menu_items', 'nav_admin', 10, 1 );     // Hook filter
+
 ?>

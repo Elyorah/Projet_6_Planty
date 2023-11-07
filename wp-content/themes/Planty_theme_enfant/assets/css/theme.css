@@ -11,6 +11,19 @@
   font-weight: 700 !important;
 }
 
+
+
+/***    HOOK    ***/
+
+.hook-style {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 0 30px;
+}
+
+
+
 /***    BODY    ***/
 
 body {                              /* limitation de la taille de la page à 1440 px */
@@ -341,6 +354,13 @@ input::-webkit-outer-spin-button {
 
   .centre-titre {
     text-align: center !important;
+  }
+
+
+  /*** HOOK ***/
+
+  .hook-style {
+    padding: 0;
   }
 
 
