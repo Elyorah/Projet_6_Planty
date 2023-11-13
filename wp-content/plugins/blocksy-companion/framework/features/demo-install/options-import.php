@@ -380,7 +380,11 @@ class DemoInstallOptionsInstaller {
 		$data->url = wp_get_attachment_url($id);
 		$data->thumbnail_url = wp_get_attachment_thumb_url($id);
 
-		if ('svg' === $file_array['extension']) {
+		if (
+			isset($file_array['extension'])
+			&&
+			'svg' === $file_array['extension']
+		) {
 			$dimensions = Plugin::instance()
 				->theme_integration
 				->svg_dimensions($file);
@@ -388,13 +392,18 @@ class DemoInstallOptionsInstaller {
 			$data->width = (int) $dimensions->width;
 			$data->height = (int) $dimensions->height;
 		} else {
-			$data->height = $meta['height'];
-			$data->width = $meta['width'];
-		}
-
-		if ($meta && is_array($meta)) {
-			$data->height = $meta['height'];
-			$data->width = $meta['width'];
+			if (
+				$meta
+				&&
+				is_array($meta)
+				&&
+				isset($meta['height'])
+				&&
+				isset($meta['width'])
+			) {
+				$data->height = $meta['height'];
+				$data->width = $meta['width'];
+			}
 		}
 
 		$this->sideloaded_images[$file] = $data;

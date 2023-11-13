@@ -49,8 +49,10 @@ if ($about_source === 'from_wp') {
 		['fn' => 'blocksy_simple_image'],
 		blc_call_fn(
 			['fn' => 'blocksy_get_avatar_url'],
-			$sizes[$avatar_size] * 2,
-			$user_id
+			[
+				'avatar_entity' => $user_id,
+				'size' => $sizes[$avatar_size] * 2
+			]
 		),
 		[
 			'tag_name' => 'figure',
